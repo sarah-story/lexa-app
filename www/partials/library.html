@@ -1,0 +1,52 @@
+<ion-view id="libraryPage">
+  
+  <div class="bar bar-header item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" ng-model="searchTerm"placeholder="Search">
+    </label>
+    <button class="button button-clear" ng-click="cancel()">
+      Cancel
+    </button>
+  </div>
+
+  <ion-content class="has-footer has-header">
+    <div class="list card" ng-repeat="course in libraryCourses | courseList:userCourses | filter:searchTerm">
+
+      <div class="item">
+        <strong>{{course.title}}</strong>
+      </div>
+
+      <div class="item item-text-wrap">
+        {{course.description}}
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-top">
+        <a class="tab-item" href="#/library/{{course.$id}}">
+          <i class="icon ion-university"></i>
+          View Course
+        </a>
+        <a class="tab-item" href="#" ng-click="takeCourse(course)">
+          <i class="icon ion-ios-plus-empty"></i>
+          Take Course
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+  <ion-tabs class="tabs-light tabs-icon-top">
+
+    <ion-tab title="Home" icon-on="ion-home" icon-off="ion-home" href="#/" nav-transition="none">
+      
+    </ion-tab>
+
+    <ion-tab title="Library" icon-on="ion-ios-book" icon-off="ion-ios-book" href="#/library" nav-transition="none">
+      
+    </ion-tab>
+
+    <ion-tab title="Profile" icon-on="ion-ios-person" icon-off="ion-ios-person" href="#/profile" nav-transition="none">
+        
+    </ion-tab>
+
+  </ion-tabs>
+</ion-view>

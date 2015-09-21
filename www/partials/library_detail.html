@@ -1,0 +1,26 @@
+<ion-view id="libraryPage">
+  <ion-content>
+  <div class="list card">
+
+    <a href="javascript:history.back()" class="item item-text-wrap item-icon-left" style="text-align: center;">
+        <i class="icon ion-ios-arrow-back"></i>
+        <strong>{{course.title}}</strong>
+      </a>
+    <div class="item item-text-wrap item-icon-right" ng-repeat="lesson in lessons">
+      {{lesson.title}}
+      <i class="icon ion-document-text" ng-show="lesson.type=='text'"></i>
+      <i class="icon ion-headphone" ng-show="lesson.type=='audio'"></i>
+      <i class="icon ion-social-youtube" ng-show="lesson.type=='video'"></i>
+      <i class="icon ion-link" ng-show="lesson.type=='url'"></i>
+    </div>
+
+    <div class="item tabs tabs-secondary tabs-icon-top">
+      <a class="tab-item" href="#/library" ng-click="takeCourse(course)">
+        <i class="icon ion-ios-plus-empty"></i>
+        Take Course
+      </a>
+    </div>
+
+  </div>
+  </ion-content>
+</ion-view>

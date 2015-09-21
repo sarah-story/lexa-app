@@ -1,0 +1,116 @@
+/* Empty. Add your own CSS if you like */
+#logo {
+  font-family: 'Josefin Slab', serif;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 4em;
+}
+
+#logo2 {
+  font-family: 'Josefin Slab', serif;
+  color: white;
+  text-align: center;
+  font-size: 5em;
+}
+
+#loginPage {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/b9/a7/3b/b9a73b072facac36e513d65f7c4c6c30.jpg);
+  color: red; 
+  text-align: center;
+}
+
+.list-inset {
+  opacity: .85;
+  border-radius: 5px;
+  display: block;
+}
+
+.buttonDiv {
+  margin: 0 10px 0 10px;
+}
+
+a {
+  color: white;
+  opacity: .85;
+}
+
+#homePage {
+  background-color: #657683;
+}
+
+#libraryPage {
+  background-color: #657683;
+}
+
+#circle {
+  margin: 10px auto 20px auto; 
+  width: 200px;
+  height: 200px;
+  background: white;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#circle > p {
+  font-size: 2em;
+  line-height: 1.2em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#content iframe, #content img {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.done {
+  text-decoration: line-through !important;
+}
+
+#modal {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.slide {
+  background-color: #657683;
+  text-align: center; 
+}
+
+.slide div p {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: white !important;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.slide div i {
+  color: white !important;
+}
+
+.slide div .ion-ios-bookmarks, .ion-clock, .ion-grid {
+  padding-top: 150px;
+  font-size: 200px;
+}
+
+.spacer {
+  height: 100px
+}
